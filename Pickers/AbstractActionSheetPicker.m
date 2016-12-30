@@ -798,5 +798,10 @@ CG_INLINE BOOL isIPhone4() {
     return !CGRectContainsPoint(self.toolbar.bounds, location);
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return true;
+}
+
 @end
 
